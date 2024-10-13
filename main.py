@@ -26,7 +26,7 @@ def get_year_range(chart: Chart) -> tuple[int, int]:
             minimal_year = date[1]
         if (maximum_year is None or date[1] > maximum_year) and date[0] == 12:
             maximum_year = date[1]
-    return [minimal_year, maximum_year]
+    return (minimal_year, maximum_year)
 
 """
 returns: (minimal_yield, average_yield, maximal_yield)
