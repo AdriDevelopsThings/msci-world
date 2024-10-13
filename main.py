@@ -29,7 +29,7 @@ def get_year_range(chart: Chart) -> tuple[int, int]:
     return [minimal_year, maximum_year]
 
 """
-returns: (maximum_yield, average_yield, minimal_yield)
+returns: (minimal_yield, average_yield, maximal_yield)
 """
 def get_year_values(chart: Chart, year_range: tuple[int, int], years: int) -> tuple[int, int ,int]:
     yields = []
