@@ -13,7 +13,7 @@ def read_chart() -> Chart:
         for (index, row) in enumerate(reader):
             if index == 0:
                 continue
-            date = row[0].split(".")
+            date = row[0].split("/")
             value = row[1]
             data[(int(date[0]), int(date[1]))] = float(value)
     return data
